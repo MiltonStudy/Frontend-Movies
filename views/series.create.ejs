@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+</head>
+<body>
+
+    <form action="/series" method="POST">
+        <!-- Campo oculto para especificar el método POST -->
+        <input type="hidden" name="_method" value="POST">
+
+        <span>Serie</span>
+        <input type="text" name="serie"> <br>
+
+        <span>Descripción</span>
+        <input type="text" name="description"> <br>
+        
+        <span>Fecha de Estreno</span>
+        <input type="text" name="fechaEstreno"> <br>
+
+        <span>Número de Capitulos</span>
+        <input type="number" name="numeroCapitulos"> <br>
+
+        <span>Número de Temporadas</span>
+        <input type="number" name="numeroTemporadas"> <br>
+
+        <span>Url Imagen</span>
+        <input type="text" name="urlImagen"> <br>
+        
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

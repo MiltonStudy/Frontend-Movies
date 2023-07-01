@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Serie</td>
+                <td>Descripción</td>
+                <td>Fecha de Estreno</td>
+                <td>Número de Capitulos</td>
+                <td>Número de Temporadas</td>
+            </tr>
+        </thead>
+        <tbody>
+            <% series.forEach((serie)=> { %>
+                <tr>
+                    <td>
+                        <%= serie["serie"] %>
+                    </td>
+                    <td>
+                        <%= serie["description"] %>
+                    </td>
+                    <td>
+                        <%= serie["fecha_estreno"] %>
+                    </td>
+                    <td>
+                        <%= serie["numero_capitulos"] %>
+                    </td>
+                    <td>
+                        <%= serie["numero_temporadas"] %>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

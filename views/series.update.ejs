@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+</head>
+<body>
+
+    <form action="/series" method="POST">
+        <!-- Campo oculto para especificar el método PUT -->
+        <input type="hidden" name="_method" value="PUT">
+        
+        <input type="hidden" name="id" value="<%= serie.id_serie %>">
+
+        <span>Serie</span>
+        <input type="text" name="serie" value="<%= serie.serie %>"> <br>
+
+        <span>Descripción</span>
+        <input type="text" name="description" value="<%= serie.description %>"> <br>
+        
+        <span>Fecha de Estreno</span>
+        <input type="text" name="fechaEstreno" value="<%= serie.fecha_estreno %>"> <br>
+
+        <span>Número de Capitulos</span>
+        <input type="number" name="numeroCapitulos" value="<%= serie.numero_capitulos %>"> <br>
+
+        <span>Número de Temporadas</span>
+        <input type="number" name="numeroTemporadas" value="<%= serie.numero_temporadas %>"> <br>
+
+        <span>Url Imagen</span>
+        <input type="text" name="urlImagen" value="<%= serie.url_imagen %>"> <br>
+        
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
