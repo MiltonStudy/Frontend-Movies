@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+</head>
+<body>
+
+    <form action="/movies" method="POST">
+        <!-- Campo oculto para especificar el método PUT -->
+        <input type="hidden" name="_method" value="PUT">
+        
+        <input type="hidden" name="id" value="<%= movie.id_movie %>">
+
+        <span>Pelicula</span>
+        <input type="text" name="movie" value="<%= movie.movie %>"> <br>
+
+        <span>Descripción</span>
+        <input type="text" name="description" value="<%= movie.description %>"> <br>
+        
+        <span>Director</span>
+        <input type="text" name="director" value="<%= movie.director %>"> <br>
+
+        <span>Url Imagen</span>
+        <input type="text" name="url_imagen" value="<%= movie.url_imagen %>"> <br>
+
+        <span>Fecha de Estreno</span>
+        <input type="text" name="year_of_publication" value="<%= movie.year_of_publication %>"> <br>
+        
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

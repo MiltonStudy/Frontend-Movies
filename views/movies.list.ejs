@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Pelicula</td>
+                <td>Descripción</td>
+                <td>Director</td>
+                <td>Año de Publicación</td>
+            </tr>
+        </thead>
+        <tbody>
+            <% movies.forEach((movie) => { %>
+                <tr>
+                    <td>
+                        <%= movie["movie"] %>
+                    </td>
+                    <td>
+                        <%= movie["description"] %>
+                    </td>
+                    <td>
+                        <%= movie["director"] %>
+                    </td>
+                    <td>
+                        <%= movie["year_of_publication"] %>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
