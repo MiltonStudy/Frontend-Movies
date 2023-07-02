@@ -9,7 +9,7 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({ extensed: false }));
 
 app.get('/', (req, res) => {
-    res.send('Hola mundo');
+    res.render('home.ejs');
 });
 
 const PORT = process.env.PORT || 5000;

@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const urlSeries = "http://localhost:3000/series";
+const urlSeries = "https://backend-movies-o8wf.onrender.com/series";
 
 class SeriesService {
 

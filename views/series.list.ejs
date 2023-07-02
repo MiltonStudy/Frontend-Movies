@@ -35,6 +35,12 @@
         </div>
 
         <div class="row">
+            <div class="col-md-12" style="margin-bottom: 10px; padding: 0;">
+                <a class="btn btn-primary" href="/series/create">Registrar serie</a>
+            </div>
+        </div>
+
+        <div class="row">
             <% series.forEach((serie)=> { %>
                 <div class="card col-md-4">
                     <img style="height: 480px;" src="<%= serie["url_imagen"] %>">
